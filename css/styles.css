@@ -1,25 +1,68 @@
+:root {
+  --color-pramary-light: #faf4ea;
+  --color-pramary-dark: #31261a;
+  --color-pramary-green: #819b57;
+  --color-secondary-light: #cfcfbc;
+  --color-secondary-dark: #a18268;
+  --color-secondary-green: #465929;
+}
+/* Base */
+body {
+  color: var(--color-pramary-dark);
+}
+
 ul {
   list-style-type: none;
 }
 
+/* Button */
 .button {
   color: #faf4ea;
-  background-color: #819b57;
-  border: 2px solid #819b57;
+  background-color: var(--color-pramary-green);
+  border: 2px solid var(--color-pramary-green);
   border-radius: 8px;
   cursor: pointer;
 }
 
 .button:hover {
-  color: #465929;
+  color: var(--color-secondary-green);
   background-color: transparent;
 }
 
+/* Link */
 .link {
-  color: #faf4ea;
+  color: var(--color-pramary-light);
 }
 
 .link:hover {
-  color: #819b57;
+  color: var(--color-pramary-green);
 }
 
+/* Hero section */
+.hero-title {
+  color: var(--color-pramary-light);
+}
+
+.hero-title .accent {
+  color: var(--color-pramary-green);
+}
+
+/* Tradition section */
+.advantage-list {
+  background-color: var(--color-pramary-green);
+  color: var(--color-pramary-light);
+}
+
+.tradition-txt {
+  color: var(--color-pramary-green);
+}
+
+/* Chef section */
+.section-title span {
+  color: var(--color-secondary-green);
+}
+
+/* Contact section */
+.contact-text {
+  color: var(--color-secondary-green);
+}

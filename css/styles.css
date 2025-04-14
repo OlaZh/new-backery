@@ -46,6 +46,7 @@ body {
 }
 address {
   font-style: normal;
+/* font-weight: 400; */
 }
 ul {
   list-style-type: none;

@@ -36,13 +36,28 @@
 }
 /* Base */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-primary-dark);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 150%; /* 27/18 */
+  margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -50,6 +65,24 @@ ul {
   list-style-type: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
 /* Button */
 
 .button {
@@ -59,6 +92,7 @@ ul {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  padding: 16px 32px;
 }
 
 .button:hover {
@@ -80,8 +114,12 @@ ul {
 }
 
 /* Hero section */
+.hero-section {
+  padding: 272px 0;
+}
 
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
@@ -94,7 +132,9 @@ ul {
 }
 
 /* Tradition section */
-
+.traditions-sections {
+  padding-top: 96px;
+}
 .advantage-list {
   background-color: var(--color-primary-green);
   color: var(--color-primary-light);
@@ -102,6 +142,9 @@ ul {
 .advantage-item {
   font-size: 20px;
   font-weight: 300;
+}
+.tradition-title {
+  margin-bottom: 42px;
 }
 .tradition-text .brand {
   color: var(--color-primary-green);
@@ -128,16 +171,23 @@ ul {
 .section-title span {
   color: var(--color-secondary-green);
 }
+.chefs-title {
+  margin-bottom: 80px;
+}
 .chef-title {
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 /* Format section */
-
+.farmat-section {
+  margin-bottom: 80px;
+}
 .format-title {
   font-size: 24px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .format-text {
@@ -146,9 +196,13 @@ ul {
 }
 
 /* Contact section */
+.contsct-section {
+  margin-bottom: 16px;
+}
 
 .contact-text {
   color: var(--color-secondary-green);
+  margin-bottom: 42px;
 }
 
 /* Footer */
